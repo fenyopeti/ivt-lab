@@ -86,7 +86,8 @@ public class GT4500 implements SpaceShip {
         secondarySucces = secondaryTorpedoStore.fire(1);
       }
 
-      firingSuccess = primarySucces || secondarySucces;
+
+      firingSuccess = primarySucces && secondarySucces;
         // try to fire both of the torpedos
 
         break;
